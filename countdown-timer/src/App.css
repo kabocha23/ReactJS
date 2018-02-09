@@ -1,0 +1,43 @@
+body {
+  background-color: steelblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header1 {
+  font-size: 50px;
+}
+
+.countdown {
+  margin: 0px 0px 0px 0px;
+}
+
+.timeLeft {
+  color: rgb(255, 105, 56);
+  font-size: 40px;
+}
+
+.startButton {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.pauseButton {
+  background-color: rgb(206, 19, 44);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+}
