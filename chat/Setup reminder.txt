@@ -1,0 +1,39 @@
+create-react-app chat
+edit chat/index.html to add the <div id='root'></div>
+edit chat/App.js to build the AppComponent
+edit chat/App.css to set up the chat room layout
+
+Manage State using Redux:
+cd to root folder: yarn add redux react-redux
+
+in chat/App.js:
+import AddMessage, MessagesList, and Sidebar from ./containers/
+
+We include the Sidebar, MessagesList, and AddMessage components.
+They all have:
+	-a presentational component, which manages the user interface
+	-a container component, which manages its behavior and the data that the presentational component will show
+
+Edit chat/index.js to initialize Redux, then import the chat reducer, and then create the store.
+Instead of telling ReactDOM to render <App /> , enter Provider, which makes the store available to all the components of the app, without explicitly passing it down.
+
+Create folder and file: src/actions/index.js:
+import from ActionTypes.js and define the actions
+
+Enter those action constants in src/constants/ActionTypes.js
+
+The reducers take care of creating a new state when an action is dispatched. In particular:
+
+when a message is added by us, we add it to the (local) list of messages
+when we receive a message from the server, we add it to our list of messages
+when we add a user (ourselves), we put it in the users list
+when we get an updated users list from the server, we refresh
+
+yarn add chance
+yarn add ws
+
+cd to project root folder (chat):
+yarn start
+
+cd to server folder:
+node app.js
